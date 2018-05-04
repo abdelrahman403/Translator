@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prolog-Web-Translator</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <!--===== start navbar =====-->
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">Translator</a>
+
+        <div class="img-container nav navbar-nav navbar-right">
+          <img src="assets/images/nav-img.jpg" alt="image">
+        </div>
+
+      </div>  <!-- container -->
+    </nav>
+
+    <!--===== end navbar =====-->
+
+    <!--===== start section-body =====-->
+
+    <div class="section-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 switch-holder">
+            <ul>
+              <li><a href="#" id="ar">Arabic</a></li>
+              <li><a href="#" id="en">English</a></li>
+            </ul>
+          </div>
+
+          <div class="character-holder col-md-6 col-xs-12 ">
+            <div class="img-holder">
+              <img src="assets/images/image.jpg" alt="test">
+            </div>
+            <!-- <video src="testing/test2.mp4" autoplay></video> -->
+          </div>
+      
+          <form class="col-md-6 col-xs-12" id="trans-form"  name="dataForm">
+            <textarea class="form-control" id="en-input" name="dataInput"cols="60" rows="9" placeholder="Your English Word."></textarea>
+            <textarea class="form-control" id="ar-output" name="dataOutput" cols="60" rows="9" placeholder="Arabic Translation." disabled></textarea>
+            <a href="#" id="say">
+              <i class="glyphicon glyphicon-volume-up"></i>
+            </a>
+            <button class="btn btn-default">Translate</button>
+          </form>
+
+          <audio src="" id="speech" hidden></audio>
+
+
+
+          <!-- <div class="char-container">
+              <div class="img-holder">
+                <img src="testing/character.jpg" id="char-talk" alt="test">
+              </div>
+              <video src="testing/anim/0001-0013.mp4" autoplay></video>
+            </div> -->
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--===== end section-body =====-->
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
