@@ -1,7 +1,6 @@
 ﻿
 % *** English Dataset *** %
 
-translate(session,'دورة'):-!.
 translate(current,'حالي'):-!.
 translate(session,'جلسة'):-!.
 translate(cancel,'ألغى'):-!.
